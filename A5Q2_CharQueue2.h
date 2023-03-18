@@ -20,4 +20,6 @@ public:
 	
 private:
     //add private members as per assignment	
+    std::deque<char> myArray;
+    size_t mySize;
 };

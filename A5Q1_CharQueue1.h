@@ -7,6 +7,7 @@ public:
     CharQueue1();
     CharQueue1(size_t size);
     CharQueue1(const CharQueue1& src); // copy constructor
+   // ~CharQueue1() {}
 
     void enqueue(char ch);
     char dequeue();
@@ -20,4 +21,7 @@ public:
 	
 private:
     //add private members as per assignment	
+    std::unique_ptr<char[]> myArray;
+    int mySize{  };
+    int index{  };
 };
